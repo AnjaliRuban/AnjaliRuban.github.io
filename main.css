@@ -4,6 +4,10 @@ html {
 }
 
 body {
+    width: 100%;
+}
+
+#body {
     width: 95%;
     margin: auto;
 }
@@ -378,6 +382,7 @@ mark {
     height: 45px;
     width: 100%;
     margin: 0 auto;
+    border-top: 1px solid #d4d4d4;
     background-color: #fff;
     text-align: center;
 }
