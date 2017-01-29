@@ -444,6 +444,11 @@ button:hover{
     color: #E5E1E2;
 }
 
+#period {
+    display:inline;
+    width: 10px;
+    height: 10px;
+}
 
 
 
