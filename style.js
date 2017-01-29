@@ -9,11 +9,11 @@ function changeIce() {
     
     totalVar = 500 * (1 - totalVar / 6000) + 150;
     
-    alert(document.getElementById("ice").clientwidth);
+    alert(document.getElementById("ice").style.twidth);
     
-    document.getElementById("ice").clientwidth = totalVar + "px";
+    document.getElementById("ice").style.width = totalVar + "px";
 
-    alert(document.getElementById("ice").clientwidth);
+    alert(document.getElementById("ice").style.width);
     
     //var mar = (document.width - totalVar) / 2;
     //document.getElementById("ice").setAttribute("style", "margin-left:" + mar + "px");
