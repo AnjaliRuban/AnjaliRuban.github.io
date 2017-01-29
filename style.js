@@ -5,7 +5,7 @@ function changeIce() {
     var v1 = document.getElementById("menuForm").elements.namedItem("energy").value,
         v2 = document.getElementById("menuForm").elements.namedItem("water").value,
         v3 = document.getElementById("menuForm").elements.namedItem("waste").value,
-        totalVar = parseInt(v1) + parseInt(v2) + parseInt(v3);
+        totalVar = parseInt(v1) + parseInt(v2)/10 + parseInt(v3);
     
     //alert(v1);
     //alert(v2);
