@@ -1,3 +1,7 @@
+html {
+   
+}
+
 body {
     width: 95%;
     margin: auto;
@@ -61,7 +65,7 @@ span {
 #percy > h1 {
     position: absolute;
     z-index: 1;
-    top: 10px;
+    top: -10px;
 
 }
 
@@ -98,6 +102,10 @@ span {
     padding: 0;
     margin: auto;
     width: auto;
+    
+    box-shadow: 3px 3px 5px #cccccc;
+    -webkit-box-shadow: 3px 3px 5px #cccccc;
+    -moz-box-shadow: 3px 3px 5px #cccccc;
 }
 
 
