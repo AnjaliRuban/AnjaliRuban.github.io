@@ -102,10 +102,6 @@ span {
     padding: 0;
     margin: auto;
     width: auto;
-    
-    box-shadow: 3px 3px 5px #cccccc;
-    -webkit-box-shadow: 3px 3px 5px #cccccc;
-    -moz-box-shadow: 3px 3px 5px #cccccc;
 }
 
 
