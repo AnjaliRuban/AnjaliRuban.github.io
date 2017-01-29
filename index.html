@@ -1,0 +1,103 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Save Percy the Polar Bear</title>
+        <meta name="description" content="Find out your carbon footprint and see what you can do to save Percy and all his friends.">
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript" src="style.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Lato" rel="stylesheet">
+        <script>
+		window.tcAsyncInit = function() {
+				tc.init ({
+				botkey: "undefined",
+				appUISetting : '%7B%22minimisedScreen%22%3A%7B%22minText%22%3A%22Talk%20to%20Percy%22%2C%22width%22%3A%22400%22%2C%22textColor%22%3A%22%23565656%22%7D%2C%22chatScreen%22%3A%7B%22maxText%22%3A%22Percy%20d%27Bear%22%2C%22imageDisplayType%22%3A%22circular%22%2C%22textColor%22%3A%22%23585858%22%7D%2C%22loginScreen%22%3A%7B%22height%22%3A%22410%22%2C%22formHeading%22%3A%22Please%20tell%20us%20about%20yourself.%22%2C%22nameLabel%22%3A%22Add%20Name%22%2C%22emailLabel%22%3A%22Add%20Email%22%2C%22phoneLabel%22%3A%22Add%20Phone%20No%22%2C%22messageLabel%22%3A%22Add%20Message%22%2C%22submitBtnText%22%3A%22Start%20Chatting%22%7D%2C%22contentScreen%22%3A%7B%22customfontSize%22%3A%2218%22%2C%22botBgColor%22%3A%22%23214552%22%2C%22botColor%22%3A%22%23fff%22%2C%22userBgColor%22%3A%22%23b6e9e3%22%2C%22userColor%22%3A%22%23000000%22%7D%2C%22commonWidget%22%3A%7B%22width%22%3A%22350%22%2C%22height%22%3A%22300%22%2C%22bgColor%22%3A%22%23ffffff%22%2C%22borderColor%22%3A%22%23EEEEEE%22%2C%22textColor%22%3A%22%23ff4400%22%2C%22titleTextFont%22%3A%2218%22%2C%22titleWinHeight%22%3A%2245%22%2C%22isResponsive%22%3A%22No%22%2C%22msgEncryption%22%3A%22No%22%2C%22persistenceMenu%22%3A%22%7B%5C%22menu%5C%22%3A%5B%7B%5C%22type%5C%22%3A%5C%22url%5C%22%2C%5C%22title%5C%22%3A%5C%22Gupshup%5C%22%2C%5C%22url%5C%22%3A%5C%22www.gupshup.io%5C%22%7D%2C%7B%5C%22type%5C%22%3A%5C%22text%5C%22%2C%5C%22title%5C%22%3A%5C%22Help%5C%22%7D%5D%7D%22%2C%22logo%22%3A%22https%3A//www.gupshup.io/images/botwidget/ic_dummy_chat_g.png%22%2C%22user%22%3A%22https%3A//www.gupshup.io/images/botwidget/ic_user.png%22%2C%22bot%22%3A%22https%3A//www.gupshup.io/images/botwidget/ic_bot.png%22%7D%7D',
+				version : 'v2'
+			});
+		};
+		(function(d, s, id){
+		var js, tjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		css = d.createElement('link');
+		css.type = "text/css";
+		css.rel = "stylesheet";
+		css.href = '//www.buildquickbots.com/botwidget/v2/demo/static/css/style.css';
+		css1 = d.createElement('link');
+		css1.type = "text/css";
+		css1.rel = "stylesheet";
+		css1.href = 'https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css';
+		js.src = '//www.buildquickbots.com/botwidget/v2/demo/static/js/sdk.js';
+		tjs.parentNode.insertBefore(js, tjs);
+		tjs.parentNode.insertBefore(css,tjs);
+		tjs.parentNode.insertBefore(css1,tjs);
+	}(document, 'script', 'tc-sdk'));
+    </script>
+    </head>
+    <body>
+
+        <div id = "percy">
+            <h1>Save Percy</h1>
+            <img id = "polarBear" src = "Polar%20Bear.png">
+            <img id = "ice" src = "Ice.png">
+        </div>
+        <div id = "tabs">
+            <ul class="tab">
+                <li><a href="#menu" class="tablinks active" onclick="opentab(event, 'menu');
+                "><img src = "menu.png"></a></li>
+                <li><a href="#camera" class="tablinks" onclick="opentab(event, 'camera')"><img src = "photo-camera.png"></a></li>
+                <!--<li><a href="#chat" class="tablinks" onclick="opentab(event, 'chat')"><img src = "paper-plane.png"></a></li>-->
+                <li><a href="#footprint" class="tablinks" onclick="opentab(event, 'footprint')"><img src = "footprint.png"></a></li>
+            </ul>
+        </div>
+        <div id = "content">
+            <div id = "menu" class="tabcontent">
+                <h3>What's Your Impact?</h3>
+                <p style="font-family:Lato; text-align:center"> Here you can monitor your carbon footprint! Each scale displays a range of values that you can change based on how much energy, water, or waste your household produces per month. Try to aim for below the average usage value! </p>
+                
+                <h4>Energy Usage (kwh/mo) </h4>
+                <input id = "val1" type="range" min="0" max="1850" value="0" step="10" onchange="showValue(this.value)" />
+                <span id="energy">0</span>
+                <span id="energy2">1850</span>
+                <br>
+                <br>
+                <p>USA Average Energy Usage Per Month: 911 kwh/mo</p>
+                <br>
+        
+                <h4>Water Usage (10s of gal/mo) </h4>
+                <input id = "val2" type="range" min="0" max="2500" value="0" step="10" onchange="showValue1(this.value)"/>
+                <span id="water">0</span>
+                <span id="water2">2500</span>
+                <br>
+                <br>
+                <p>USA Average Water Usage Per Month: 12,400 gal/mo</p>
+                <br>
+        
+                <h4>Waste Production (lbs/mo) </h4>
+                <input id = "val3" type="range" min="0" max="1000" value="0" step="10" onchange="showValue2(this.value)"/>
+                <span id="waste">0</span>
+                <span id="waste2">1000</span>
+                <br>
+                <br>
+                <p>USA Average Waste Production Per Month: 533 lbs/mo</p>
+                <br>
+            </div>
+            <div id="camera" class="tabcontent">
+                <h3>Take a Look</h3>
+                <p>Take a picture to see how your surroundings measure up.</p>
+            </div>
+            <!--<div id="chat" class="tabcontent">
+                <h3>Chat With Percy</h3>
+                <p>Insert Chat Here :)</p>
+            </div> -->
+            <div id="footprint" class="tabcontent">
+                <div id = colm1>
+                    <h3>Reduce Your Footprint</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div id = "chat"></div>
+    </body>
+</html>
