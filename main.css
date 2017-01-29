@@ -70,7 +70,7 @@ span {
 
 #ice {
     position: absolute;
-    display: block;
+    margin: auto;
     height: 23%;
     width: 650px;
     top: 405px;
@@ -85,6 +85,7 @@ span {
     margin: 0 auto;
     position: fixed;
     bottom: 45px;
+    z-index: 3;
 }
 
 .tab {
@@ -112,7 +113,10 @@ ul.tab li a img {
     width: 60%;
 }
 
-ul.tab li {float: left;}
+ul.tab li {
+    float: left;
+    text-align: center;
+}
 
 ul.tab li a {
     display: inline-block;
@@ -146,7 +150,7 @@ ul.tab li a:focus, .active {background-color: #CCE5CC;}
 }
 
 #content {
-    padding-bottom: 300px;
+    padding-bottom: 400px;
 }
 
 
@@ -266,10 +270,28 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*Footprint*/
 
-#colm1{
-    width: 50%;
+#foot {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: 400px;
 }
 
+#donate {
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #cccccc;
+    -webkit-box-shadow: 3px 3px 5px #cccccc;
+    -moz-box-shadow: 3px 3px 5px #cccccc;
+    font-weight: bold;
+    background: #214552;
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 150%;
+}
 
 /*Chat*/
 
@@ -280,5 +302,14 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
+    text-align: center;
 }
+
+#chat > p {
+    vertical-align: baseline;
+    font-size: 10px;
+    color: #cccccc;
+}
+
+
 

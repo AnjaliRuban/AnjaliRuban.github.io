@@ -2,22 +2,51 @@
 
 function changeIce() {
     
-    var v1 = document.getElementById("val1").value,
-        v2 = document.getElementById("val2").value,
-        v3 = document.getElementById("val3").value,
-        totalVar = v1 + v2 + v3;
+    var v1 = document.getElementById("menuForm").elements.namedItem("energy").value,
+        v2 = document.getElementById("menuForm").elements.namedItem("water").value,
+        v3 = document.getElementById("menuForm").elements.namedItem("waste").value,
+        totalVar = parseInt(v1) + parseInt(v2) + parseInt(v3);
     
+    //alert(v1);
+    //alert(v2);
+    //alert(v3);
+    //alert(totalVar);
+
     totalVar = 500 * (1 - totalVar / 6000) + 150;
     
-    alert(document.getElementById("ice").style.twidth);
+    //alert(totalVar);
     
-    document.getElementById("ice").style.width = totalVar + "px";
+    document.getElementById("ice").style.width = totalVar + 'px';
 
-    alert(document.getElementById("ice").style.width);
+    //alert(document.getElementById("ice").style.width);
     
-    //var mar = (document.width - totalVar) / 2;
-    //document.getElementById("ice").setAttribute("style", "margin-left:" + mar + "px");
+    var mar = (document.width - totalVar) / 2;
+    document.getElementById("ice").style.left = mar + "px";
 }
+function changeFoot() {
+    
+    var v1 = document.getElementById("menuForm").elements.namedItem("energy").value,
+        v2 = document.getElementById("menuForm").elements.namedItem("water").value,
+        v3 = document.getElementById("menuForm").elements.namedItem("waste").value,
+        totalVar = parseInt(v1) + parseInt(v2) + parseInt(v3);
+    
+    //alert(v1);
+    //alert(v2);
+    //alert(v3);
+    //alert(totalVar);
+
+    totalVar = 600 * (1 - totalVar / 6000) + 150;
+    
+    //alert(totalVar);
+    
+    document.getElementById("foot").style.width = totalVar + 'px';
+
+    //alert(document.getElementById("ice").style.width);
+    
+    var mar = (document.width - totalVar) / 2;
+    document.getElementById("ice").style.left = mar + "px";
+}
+
 
 function opentab(evt, tabName) {
     
@@ -43,6 +72,7 @@ function opentab(evt, tabName) {
 
 function showValue(newValue) {
     changeIce();
+    
 	document.getElementById("energy").innerHTML = newValue;
 }
 function showValue1(newValue) {
