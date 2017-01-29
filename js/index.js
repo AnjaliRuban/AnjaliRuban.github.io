@@ -14,6 +14,7 @@
 	var image = $("#image");
 	var tagsContainer = $(".tags-container");
 	var tags = $(".tags")
+    
 
 	submitButton.on("click", function (event) {
 		// getting the input from the image
@@ -33,7 +34,7 @@
 			else if (response) {
 				try {
 					// if we get the response display it
-					displayTag(response)									
+					displayTag(response)
 				}
 				catch (error) {
 					console.log(error)
@@ -47,6 +48,12 @@
 		 */
 
 	})
+    
+    function parseTag(response){
+        
+        var image 	= 	response.results[0]
+		var tag 	= 	image.result.tag
+    }
 
 	/*
 	 * displayTag
@@ -62,7 +69,8 @@
 		 * we only need to retrieve the first image*/
 		var image 	= 	response.results[0]
 		var tag 	= 	image.result.tag
-
+        
+        
 		var conceptsLength = tag.classes.length
 
 		// Looping through all the classes in the tag using map
