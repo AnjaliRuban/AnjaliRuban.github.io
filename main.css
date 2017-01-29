@@ -51,6 +51,11 @@ span {
     text-align: center;
     height: 640px;
     z-index: 1;
+    width: 100%
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center
 }
 
 #percy > h1 {
@@ -70,8 +75,9 @@ span {
 
 #ice {
     position: absolute;
-    margin: auto;
     height: 23%;
+    left: 300;
+    right: 300;
     width: 650px;
     top: 405px;
     z-index: 1;

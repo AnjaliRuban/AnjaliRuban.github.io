@@ -19,8 +19,9 @@ function changeIce() {
     document.getElementById("ice").style.width = totalVar + 'px';
 
     //alert(document.getElementById("ice").style.width);
-    
-    var mar = (document.width - totalVar) / 2;
+    //alert(window.innerWidth);
+    var mar = (window.innerWidth - totalVar) / 2;
+    //alert(mar);
     document.getElementById("ice").style.left = mar + "px";
 }
 function changeFoot() {
@@ -43,8 +44,8 @@ function changeFoot() {
 
     //alert(document.getElementById("ice").style.width);
     
-    var mar = (document.width - totalVar) / 2;
-    document.getElementById("ice").style.left = mar + "px";
+    //var mar = (document.width - totalVar) / 2;
+    //document.getElementById("ice").style.left = mar + "px";
 }
 
 
