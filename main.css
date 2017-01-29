@@ -1,6 +1,6 @@
 html {
     min-width: 1000px;
-    background-color: #FFFBFC;
+    background-color: #FFF;
 }
 
 body {
@@ -94,6 +94,12 @@ span {
     width: 650px;
     top: 405px;
     z-index: 1;
+}
+
+#break {
+    width : 80%;
+    margin: 0 10%;
+    border-color: #FFF; 
 }
 
 
@@ -355,9 +361,7 @@ mark {
     padding: 20px;
     margin-bottom: 200px;
     cursor: pointer;
-    box-shadow: 3px 3px 5px #cccccc;
-    -webkit-box-shadow: 3px 3px 5px #cccccc;
-    -moz-box-shadow: 3px 3px 5px #cccccc;
+    
     font-weight: bold;
     background: #214552;
     border-style: none;
@@ -384,6 +388,14 @@ mark {
     color: #cccccc;
 }
 
+#credit {
+    float: left;
+    position:absolute;
+    left: 0px;
+    bottom: 5px;
+    text-decoration: none;
+    color: #E5E1E2;
+}
 
 
 
