@@ -328,6 +328,47 @@ mark {
 	margin-left: auto;
 }
 
+input[type=text] {
+    width: 60%;
+    padding: 20px 10px 20px 10px;
+    margin: 10px 0px;
+    height: 40px;
+    resize: none;
+    background-color: #fff;
+    outline:none;
+    font-family:  'Open Sans Condensed', sans-serif;
+    font-size: 23px;
+    color: #797979;
+    border-style: none;
+    border-bottom-style: solid;
+    border-color:#214552;
+
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+button {
+   
+    width: 14%;
+    height: 40px;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 0px;
+    background-color: #214552;
+    border-style: none;
+    font-family:  'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    outline: none;
+    color: #C2A1A0;
+    background-color: #fff4e6;
+}
 
 
 
@@ -401,6 +442,8 @@ mark {
     text-decoration: none;
     color: #E5E1E2;
 }
+
+
 
 
 
