@@ -94,17 +94,54 @@
                 <p>Insert Chat Here :)</p>
             </div> -->
             <div id="footprint" class="tabcontent">
-                <h3>Reduce Your Footprint</h3>
-                    <p style="text-align:center;">
-                    <img id="foot" src="human-feet-shape.svg" alt="carbon_footprint" style="width: 600px; height: auto;"> 
-                    </p>
+                <div id = "footchecklist">
+                    <h3>Reduce Your Footprint</h3>
+                    <div id = "footprintbox">
+                        <img id="foot" src="human-feet-shape.svg" alt="carbon_footprint">
+                        <p id  = "emmissions" style = "padding-top: 40px;">Yosu make about 20 metric tons of C02 emmissions per year.</p>
+                    </div>
+                    <form id = "checklist">
+                        <input type="checkbox" class = "box" name="ride" value= "off" onchange = "changeFoot()"> I ride my bike, walk, or take public transport to work/school.<br>
+                        <input type="checkbox" name="electricCar" value= "off" class = "box" onchange = "changeFoot()"> I have an electric car.
+                        <br>
+                        <input type="checkbox" name="carpool" value= "off" class = "box" onchange = "changeFoot()"> I carpool to school/work.
+                        <br>
+                        <input type="checkbox" name="bags" value= "off" class = "box" onchange = "changeFoot()"> I use reusable shopping bags.<br>
+                        <input type="checkbox" name="bottle" value= "off" class = "box" onchange = "changeFoot()"> I use a reusable water bottle instead of bottled water.<br>
+                        <input type="checkbox" name="compost" value= "off" class = "box" onchange = "changeFoot()"> I compost.
+                        <br>
+                        <input type="checkbox" name="rrr" value= "off" class = "box" onchange = "changeFoot()"> I reuse, reduce, and recycle
+                        <br>
+                        <input type="checkbox" name="lights" value= "off" class = "box" onchange = "changeFoot()"> I turn off the lights and unplug electronic appliances when they are not being used.
+                        <br>
+                        <input type="checkbox" name="bulbs" value= "off" class = "box" onchange = "changeFoot()"> I have fluorescent light bulbs installed in my house.
+                        <br>
+                        <input type="checkbox" name="showers" value= "off" class = "box" onchange = "changeFoot()"> I take showers under 10 minutes. 
+                        <br>
+                        <input type="checkbox" name="brush" value= "off" class = "box" onchange = "changeFoot()"> I don't let the faucet run water while I brush my teeth
+                        <br>
+                        <input type="checkbox" name="toilet" value= "off" class = "box" onchange = "changeFoot()"> My toilet uses less water to flush.
+                        <br>
+                        <input type="checkbox" name="showerHead" value= "off" class = "box" onchange = "changeFoot()"> My shower head uses low pressure.
+                        <br>
+                        <input type="checkbox" class = "box" name="faucets" value= "off" onchange = "changeFoot()"> I don't have any leaky faucets.
+                        <br>
+                        <input type="checkbox" class = "box" name="wash" value= "off" onchange = "changeFoot()"> I wash my car in the evening so that the water doesn't evaporate.<br>
+                        
+                        <!--<input type="submit" value="Submit"> -->
+                    </form>
+                </div>
+                <div id= "buttonDonate">
                     <form>
                         <input id = "donate" type="button" value="Donate to the Nature Conservatory" onclick="window.open('http://www.nature.org/','_blank')" />
                     </form>
+                </div>
         </div>
         
             <div id = "chat"> 
                 <p>© Anjali, Medha, Rachel 2017</p>
+                <br>
+                <p>Pixelhacks Hackathon</p>
             </div>
         </div>
     </body>

@@ -1,11 +1,12 @@
 "use strict";
+/*jslint devel: true */
 
 function changeIce() {
     
     var v1 = document.getElementById("menuForm").elements.namedItem("energy").value,
         v2 = document.getElementById("menuForm").elements.namedItem("water").value,
         v3 = document.getElementById("menuForm").elements.namedItem("waste").value,
-        totalVar = parseInt(v1) + parseInt(v2)/10 + parseInt(v3);
+        totalVar = parseInt(v1) + parseInt(v2) / 10 + parseInt(v3);
     
     //alert(v1);
     //alert(v2);
@@ -24,29 +25,53 @@ function changeIce() {
     //alert(mar);
     document.getElementById("ice").style.left = mar + "px";
 }
+
 function changeFoot() {
     
-    var v1 = document.getElementById("menuForm").elements.namedItem("energy").value,
-        v2 = document.getElementById("menuForm").elements.namedItem("water").value,
-        v3 = document.getElementById("menuForm").elements.namedItem("waste").value,
-        totalVar = parseInt(v1) + parseInt(v2) + parseInt(v3);
-    
-    //alert(v1);
-    //alert(v2);
-    //alert(v3);
-    //alert(totalVar);
+    var v1 = document.querySelectorAll('input[type="checkbox"]:checked').length;
 
-    totalVar = 600 * (1 - totalVar / 6000) + 150;
+    var totalVar = 300 * (1 - v1 / 15) + 150;
+    var totalVar2 = .38 * (1 - v1 / 15) + 14.25;
+    
+    totalVar2 = Math.round(totalVar2 * 100) / 100;
+    totalVar2 = Math.round(totalVar2 * 100) / 100;
     
     //alert(totalVar);
     
     document.getElementById("foot").style.width = totalVar + 'px';
+    
+    document.getElementById("foot").style.marginTop = (document.getElementById("footprintbox").style.height - document.getElementById("foot").style.height) / 2; 
+    
+    document.getElementById("emmissions").innerHTML = "You make about " + totalVar2 + " metric tons of C02 emmissions per year.";
 
-    //alert(document.getElementById("ice").style.width);
+    //alert(document.getElementById("foot").style.width);
     
     //var mar = (document.width - totalVar) / 2;
     //document.getElementById("ice").style.left = mar + "px";
 }
+
+/*function defineVal(name) {
+    var currentVal = name.value;
+
+    //alert(name.value);
+    
+    if (currentVal == "off") {
+        currentVal = "on";
+    } else if (currentVal == "on") {
+        currentVal = "off";
+    } else {
+        currentVal = "on";
+    }
+    
+    alert(currentVal);
+
+    name.value = currentVal;
+    
+    alert(name.value);
+
+    
+    changeFoot();
+}*/
 
 
 function opentab(evt, tabName) {

@@ -284,15 +284,33 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*Footprint*/
 
+#footprintbox{
+    width: 50%;
+    height: 700px;
+    float: left;
+}
+
 #foot {
-    width: 600px;
+    width: 450px;
+    display: block;
+    margin: auto;
+    padding: auto auto;
     height: auto;
-    position: absolute;
-    left: 400px;
+}
+
+
+#checklist{
+    font-family: 'Lato', cursive;
+    text-align: left;
+    font-size: 18px;
+    height: 700px;
+    color:#797979;
+    padding: 30px;
+    line-height: 34px;
 }
 
 #donate {
-    position: absolute;
+    top: 50px;
     width: 500px;
     padding: 20px;
     cursor: pointer;
