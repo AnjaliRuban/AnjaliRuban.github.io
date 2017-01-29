@@ -1,5 +1,5 @@
 html {
-   
+   min-width: 1000px;
 }
 
 body {
@@ -26,6 +26,14 @@ h3 {
 h4{
     font-family: 'Lato', cursive;
     font-size: 22px;
+    width: 100%;
+    height: auto;
+    color:#797979;
+}
+
+h5{
+    font-family: 'Lato', cursive;
+    font-size: 20px;
     width: 100%;
     height: auto;
     color:#797979;
@@ -278,6 +286,41 @@ input[type=range]:focus::-ms-fill-upper {
   background: #244552;
 }
 
+/*Pictures*/
+mark {
+	background-color: #f0db4f;
+}
+
+.inputForm {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.inputForm input  {
+	text-align: center;
+}
+
+.imagePreview {
+	text-align: center;
+}
+
+.tags-container {
+	text-align: center;
+}
+
+.errorBox {
+	color: red;
+}
+
+#image {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+
 /*Footprint*/
 
 #footprintbox{
@@ -309,6 +352,7 @@ input[type=range]:focus::-ms-fill-upper {
     top: 50px;
     width: 500px;
     padding: 20px;
+    margin-bottom: 200px;
     cursor: pointer;
     box-shadow: 3px 3px 5px #cccccc;
     -webkit-box-shadow: 3px 3px 5px #cccccc;
@@ -335,9 +379,17 @@ input[type=range]:focus::-ms-fill-upper {
 
 #chat > p {
     vertical-align: baseline;
-    font-size: 10px;
+    font-size: 14px;
     color: #cccccc;
 }
+
+
+
+
+
+
+
+
 
 
 

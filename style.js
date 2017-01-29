@@ -1,5 +1,6 @@
 "use strict";
 /*jslint devel: true */
+/*global $, jQuery, alert*/
 
 function changeIce() {
     
@@ -31,7 +32,7 @@ function changeFoot() {
     var v1 = document.querySelectorAll('input[type="checkbox"]:checked').length;
 
     var totalVar = 300 * (1 - v1 / 15) + 150;
-    var totalVar2 = .38 * (1 - v1 / 15) + 14.25;
+    var totalVar2 = 0.38 * (1 - v1 / 15) + 14.25;
     
     totalVar2 = Math.round(totalVar2 * 100) / 100;
     totalVar2 = Math.round(totalVar2 * 100) / 100;
@@ -109,4 +110,26 @@ function showValue2(newValue) {
     changeIce();
 	document.getElementById("waste").innerHTML = newValue;
 }
+
+
+
+
+
+// keys.js
+// Contains keys to run this demo
+// The keys should be kept secret and separate from the code
+// Enter your keys below to take the first in running this step 
+// VROOOOM VROOM
+
+
+
+/*
+ * index.js
+ * Clarifai Basic Application demo code
+ */
+
+/*jslint devel: true */
+/*global $, jQuery, alert, Clarifai*/
+
+
 
