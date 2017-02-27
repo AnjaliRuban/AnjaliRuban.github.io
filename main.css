@@ -84,7 +84,7 @@ span {
 
 #polarBear {
     position: absolute;
-    top: 220px;
+    top: 250px;
     left: 46%;
     z-index: 2;
     width: 12%;
@@ -93,9 +93,8 @@ span {
 #ice {
     position: absolute;
     height: 23%;
-    left: 300;
-    right: 300;
-    width: 650px;
+    right: 25%;
+    width: 50%;
     top: 405px;
     z-index: 1;
 }
