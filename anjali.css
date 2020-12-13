@@ -181,11 +181,13 @@ footer {
 footer div {
     float:right;
     padding-left: 1vw;
+    font-size:0.75vw;
 }
 
 footer a, footer a:active, footer a:hover, footer a:link {
     color: #f4f1de;
     text-decoration: none;
+    
 }
 
 @media only screen and (max-width: 550px) {
@@ -239,12 +241,16 @@ footer a, footer a:active, footer a:hover, footer a:link {
     }
     
     nav a.current:after {
-    bottom: -2.5vw;
-    height: 0.1vw;
-    content: '';
-    font-size: 0;
-    width: 0.1vw; 
-    padding:0.7vw;
-}
+        bottom: -2.5vw;
+        height: 0.1vw;
+        content: '';
+        font-size: 0;
+        width: 0.1vw; 
+        padding:0.7vw;
+    }
     
+    
+    footer div {
+        font-size:2vw;
+    }
 }
