@@ -125,11 +125,11 @@ main {
     width:auto;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 6vh;
     font-family: 'Assistant', sans-serif;
     color: #3d405b;
-    /* font-size: 2.5vh; */
+    min-height: 65vh;
+    padding-bottom: 5vh;
 }
 
 main::after {
@@ -171,6 +171,10 @@ main h3 {
 main a {
     color: #81b29a;
     text-decoration: none;
+}
+
+main {
+  height: 80%;
 }
 
 footer {
