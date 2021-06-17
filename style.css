@@ -1,0 +1,264 @@
+/*
+Colors:
+    Black (Text): #10120a
+    Cream (Accent Background): #f4f1de
+    Light Red: #e07154
+    Dark Red: #823200
+    Light Blue-Green: #81b29a
+    Dark Green: #65743a
+    Dark Blue: #3d405b
+    Yellow: #f2cc8f
+
+Fonts:
+    Serif: Spectral
+    Sans Serif: Assistant
+    Script: N/A
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Spectral&display=swap');
+
+body {
+  font-size: 1.1em;
+
+}
+
+header{
+  width: 100%;
+  padding-top: 2vh;
+  display: float;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.head {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: auto;
+    text-align: center;
+    float:left;
+    display:block;
+}
+
+div.head h1.name {
+    font-family: 'Spectral', serif;
+    color: #823200;
+    font-size: 2em;
+    padding:0;
+    margin:0;
+}
+
+div.head img.face {
+    width: 7vw;
+    float: left;
+}
+
+div.head div.title {
+    padding-left: 1vw;
+    float: left;
+}
+
+div.head div.socials {
+    text-align: center;
+}
+
+div.head div.socials img {
+    width: 2.5vw;
+    padding-bottom: 1vh;
+    display:inline;
+}
+
+nav {
+    text-align: right;
+    float: right;
+    display:block;
+}
+
+nav ul {
+    margin: 0;
+    padding-top: 1vw;
+    padding-right: 2vw;
+    display: inline-flex;
+    list-style-type: none;
+    float: right;
+}
+
+nav a {
+    font-family: 'Assistant', sans-serif;
+    color: #3d405b;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:link {
+    color: #3d405b;
+}
+
+nav a:visited {
+    color: #3d405b;
+}
+
+nav a:hover {
+    color: #e07154;
+}
+
+nav a:active {
+    color: #e07154;
+}
+
+nav a.current {
+    color: #65743a;
+    cursor: default;
+}
+
+div.padding {
+
+  height:50vh;
+  background-color:pink;
+}
+
+main {
+    display: block;
+    width:auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Assistant', sans-serif;
+    color: #3d405b;
+    /* font-size: 2.5vh; */
+}
+
+main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main div.main {
+  width: 50%;
+  float: left;
+  text-align:left;
+}
+
+main div.links {
+  float:right;
+  width:50%;
+  text-align:right;
+}
+
+main div.links a {
+  display:block;
+  padding-bottom: 1vh;
+  color: #e07154;
+}
+
+main h2 {
+    font-family: 'Assistant', sans-serif;
+    color: #e07154;
+    font-size: 3.5vh;
+}
+
+main h3 {
+    font-family: 'Assistant', sans-serif;
+    color: #3d405b;
+    font-size: 2.75vh;
+}
+
+main a {
+    color: #81b29a;
+    text-decoration: none;
+}
+
+footer {
+  font-family: 'Assistant', sans-serif;
+  font-size: 0.9em;
+  display: block;
+  /* position: fixed; */
+  right:0;
+  left:0;
+  bottom:0;
+  text-align:center;
+  background-color:#823200;
+  color: #e07154;
+  padding:2px;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+div.head {
+  float:inherit;
+}
+
+div.head img.face {
+  float:inherit;
+  width:25vw;
+}
+
+div.head h1.name {
+  float:inherit;
+}
+
+div.head div.title {
+ float:inherit
+}
+
+div.head div.socials img {
+    width: 5vw;
+    padding-bottom: 1vh;
+}
+
+nav {
+    text-align: center;
+    float: inherit;
+
+    padding:0;
+    margin-bottom: 1vh;
+}
+
+nav ul {
+    padding: 0;
+    float: inherit;
+    text-align: center;
+
+}
+
+main div.main {
+  width: 100%;
+  float: inherit;
+  font-size: 0.9em;
+}
+
+main div.links {
+  font-size: 0.9em;
+  width: 100%;
+  float: inherit;
+  text-align: left;
+  background-color: #f4f1de;
+  margin-top: 5vh;
+  padding: 5%;
+  width: 90%;
+}
+
+}
+
+
+@media only screen and (max-width: 375px) {
+  div.head h1.name {
+    font-size: 8vw
+  }
+  nav {
+    font-size: 4.5vw
+  }
+
+  div.head div.socials img {
+      width: 8vw;
+
+  }
+
+}

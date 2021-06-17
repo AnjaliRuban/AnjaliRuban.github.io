@@ -19,6 +19,7 @@ Fonts:
 
 body {
     padding-bottom: 20px;
+    font-size: 1.5;
 }
 
 nav {
@@ -84,7 +85,7 @@ nav a.current:after {
     height: 0;
     content: '';
     font-size: 0;
-    width: 0; 
+    width: 0;
     padding:0.25vw;
 }
 
@@ -99,19 +100,19 @@ div.main_text {
 .main_text p {
     font-family: 'Assistant', sans-serif;
     color: #3d405b;
-    font-size: 2.5vh;  
+    font-size: 2.5vh;
 }
 
 .main_text h2 {
     font-family: 'Assistant', sans-serif;
     color: #e07154;
-    font-size: 3.5vh;  
+    font-size: 3.5vh;
 }
 
 .main_text h3 {
     font-family: 'Assistant', sans-serif;
     color: #3d405b;
-    font-size: 2.75vh;  
+    font-size: 2.75vh;
 }
 
 .main_text a {
@@ -128,7 +129,7 @@ div.header {
 }
 
 div.header h1 {
-    font-family: 'Spectral', serif;  
+    font-family: 'Spectral', serif;
     color: #823200;
     font-size: 3vw;
     padding:0;
@@ -154,7 +155,7 @@ div.header a {
     display: block;
     position: relative;
     font-family: 'Assistant', sans-serif;
-    font-size: 2.5vh; 
+    font-size: 2.5vh;
     color: #81b29a;
     text-align: right;
     margin-right: 1vw;
@@ -187,11 +188,11 @@ footer div {
 footer a, footer a:active, footer a:hover, footer a:link {
     color: #f4f1de;
     text-decoration: none;
-    
+
 }
 
 @media only screen and (max-width: 550px) {
-    
+
     div.header {
         position:absolute;
         display:block;
@@ -205,29 +206,29 @@ footer a, footer a:active, footer a:hover, footer a:link {
         height:7vh;
         width:7vh;
     }
-    
+
     div.header h1 {
         display:block;
         font-size: 6vw;
         height:7vh;
         line-height:7vh;
     }
-    
+
     div.header a img {
         width: 6vw;
     }
-    
+
     div.header a {
         text-align: left;
         font-size:4vw;
         margin-left:6vw;
-        
+
     }
-    
+
     div.header a.social {
         margin-left:0;
     }
-    
+
     div.main_text {
         position:relative;
         top:30vh;
@@ -235,21 +236,21 @@ footer a, footer a:active, footer a:hover, footer a:link {
         font-size: 4vw;
         left: 15vw;
     }
-    
+
     nav a {
         font-size: 4vw;
     }
-    
+
     nav a.current:after {
         bottom: -2.5vw;
         height: 0.1vw;
         content: '';
         font-size: 0;
-        width: 0.1vw; 
+        width: 0.1vw;
         padding:0.7vw;
     }
-    
-    
+
+
     footer div {
         font-size:2vw;
     }
